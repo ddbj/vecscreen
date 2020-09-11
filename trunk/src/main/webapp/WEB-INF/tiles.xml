@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="base.definition" template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="VecScreen | DDBJ" />
+		<put-attribute name="jquery-functions" value="/WEB-INF/jsp/jquery-functions.jsp" />
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="side-menu" value="/WEB-INF/jsp/side-menu.jsp" />
+		<put-attribute name="breadcrumb" value="/WEB-INF/jsp/breadcrumb.jsp" />
+		<put-attribute name="query-form" value="/WEB-INF/jsp/query-form.jsp" />
+		<put-attribute name="dataset" value="" />
+		<put-attribute name="parameter" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+
+	<!-- ここの名前(definition name="vecscreen")がcontrollerでviewを指定したときの名前とマッチされる (JSPのファイル名ではない) -->
+	<definition name="vecscreen" extends="base.definition">
+		<put-attribute name="title" value="DDBJ | VecScreen" />
+		<put-attribute name="dataset"
+			value="/WEB-INF/jsp/body/databases.jsp" />
+		<put-attribute name="parameter"
+			value="/WEB-INF/jsp/body/parameters.jsp" />
+	</definition>
+
+
+	<!--  -->
+
+	<definition name="base.definition2" template="/WEB-INF/jsp/layout2.jsp">
+		<put-attribute name="title" value="VecScreen | DDBJ" />
+		<put-attribute name="jquery-functions" value="/WEB-INF/jsp/jquery-functions2.jsp" />
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="side-menu" value="/WEB-INF/jsp/side-menu.jsp" />
+		<put-attribute name="breadcrumb" value="/WEB-INF/jsp/breadcrumb.jsp" />
+		<put-attribute name="report-body" value="/WEB-INF/jsp/body/report-body.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+
+
+	<definition name="vecscreen_report" extends="base.definition2">
+		<put-attribute name="title" value="DDBJ | VecScreen" />
+		<put-attribute name="report-body" value="/WEB-INF/jsp/body/report-body.jsp" />
+	</definition>
+
+
+	<definition name="search_result" extends="base.definition2">
+		<put-attribute name="title" value="DDBJ | VecScreen" />
+		<put-attribute name="jquery-functions" value="/WEB-INF/jsp/jquery-functions5.jsp" />
+		<put-attribute name="report-body" value="/WEB-INF/jsp/body/report-body.jsp" />
+	</definition>
+
+
+	<definition name="base.definition3" template="/WEB-INF/jsp/layout3.jsp">
+		<put-attribute name="title" value="VecScreen | DDBJ" />
+		<put-attribute name="jquery-functions" value="/WEB-INF/jsp/jquery-functions3.jsp" />
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="side-menu" value="/WEB-INF/jsp/side-menu.jsp" />
+		<put-attribute name="breadcrumb" value="/WEB-INF/jsp/breadcrumb.jsp" />
+		<put-attribute name="mail-body" value="/WEB-INF/jsp/body/mail-body.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+
+
+	<definition name="vecscreen_mail" extends="base.definition3">
+		<put-attribute name="title" value="DDBJ | VecScreen" />
+		<put-attribute name="mail-body" value="/WEB-INF/jsp/body/mail-body.jsp" />
+	</definition>
+
+
+	<definition name="base.definition4" template="/WEB-INF/jsp/layout4.jsp">
+		<put-attribute name="title" value="VecScreen | DDBJ" />
+		<put-attribute name="jquery-functions" value="/WEB-INF/jsp/jquery-functions4.jsp" />
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="side-menu" value="/WEB-INF/jsp/side-menu.jsp" />
+		<put-attribute name="breadcrumb" value="/WEB-INF/jsp/breadcrumb.jsp" />
+		<put-attribute name="viewer-form" value="/WEB-INF/jsp/viewer-form.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+
+
+	<definition name="vecscreen_viewer" extends="base.definition4">
+		<put-attribute name="title" value="DDBJ | VecScreen | Result viewer" />
+		<put-attribute name="viewer-form" value="/WEB-INF/jsp/viewer-form.jsp" />
+	</definition>
+
+
+	<definition name="test.security_application_scan" template="/WEB-INF/jsp/test/security_application_scan.jsp">
+		<put-attribute name="title" value="DDBJ | VecScreen | Test | Security Application Scan" />
+	</definition>
+
+
+ 	<!-- エラー画面 -->
+    <definition name="base.error_page" template="/WEB-INF/jsp/error/layout.jsp">
+		<put-attribute name="title" value="VecScreen | DDBJ" />
+		<put-attribute name="jquery-functions" value="/WEB-INF/jsp/jquery-functions.jsp" />
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="side-menu" value="/WEB-INF/jsp/side-menu.jsp" />
+		<put-attribute name="breadcrumb" value="/WEB-INF/jsp/breadcrumb.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+    </definition>
+    
+    <definition name="error_page" template="/WEB-INF/jsp/error/error.jsp" />
+</tiles-definitions>
