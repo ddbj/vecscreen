@@ -61,6 +61,8 @@
                 </div>
             </div>
         </div>
+        <footer></footer>
+        <div id="back-top"></div>
     </body>
 </html>
 
