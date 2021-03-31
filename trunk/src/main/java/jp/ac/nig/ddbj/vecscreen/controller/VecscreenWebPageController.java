@@ -72,7 +72,7 @@ public class VecscreenWebPageController {
 			model.addAttribute("language_chooser_url", "vecscreen?lang=en");
 			
 			// http://www.ddbj.nig.ac.jp/index-j.html などの"j"の部分。
-			model.addAttribute("language_code", "j");
+			model.addAttribute("language_code", "");
 			model.addAttribute("language_code2", "ja");
 		}
 		else {
@@ -80,7 +80,7 @@ public class VecscreenWebPageController {
 			model.addAttribute("language_chooser_label", "Japanese");
 			model.addAttribute("language_chooser_url", "vecscreen?lang=ja");
 			
-			model.addAttribute("language_code", "e");
+			model.addAttribute("language_code", "-e");
 			model.addAttribute("language_code2", "en");
 		}
 		
@@ -96,7 +96,7 @@ public class VecscreenWebPageController {
 			model.addAttribute("language_chooser_url", "viewer?lang=en");
 
 			// http://www.ddbj.nig.ac.jp/index-j.html などの"j"の部分。
-			model.addAttribute("language_code", "j");
+			model.addAttribute("language_code", "");
 			model.addAttribute("language_code2", "ja");
 
 		}
@@ -105,7 +105,7 @@ public class VecscreenWebPageController {
 			model.addAttribute("language_chooser_label", "Japanese");
 			model.addAttribute("language_chooser_url", "viewer?lang=ja");
 
-			model.addAttribute("language_code", "e");
+			model.addAttribute("language_code", "-e");
 			model.addAttribute("language_code2", "en");
 		}
 

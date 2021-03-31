@@ -1,63 +1,71 @@
 <%@ page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
 <!DOCTYPE html>
-<!--
-  Design by Free CSS Templates
-  http://www.freecsstemplates.org
-  Released for free under a Creative Commons Attribution 2.5 License
+<html lang="${language_code2}">
+    <head>
+        <meta charset="UTF-8" />
+        <meta property="og:title" content="Top" />
+        <meta property="og:url" content="/index.html" />
+        <meta
+          property="og:description"
+          content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+        />
+        <meta property6="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title><tiles:insertAttribute name="title" ignore="true" /></title>
+        <script async src="https://www.google-analytics.com/analytics.js"></script>
+        <script type="text/javascript" src="resources/js/jquery-1.7.2.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+        var $220 = $.noConflict(true);
+        </script>
+        <tiles:insertAttribute name="jquery-functions" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.hoverintent/1.10.1/jquery.hoverIntent.min.js" integrity="sha512-gx3WTM6qxahpOC/hBNUvkdZARQ2ObXSp/m+jmsEN8ZNJPymj8/Jamf8+/3kJQY1RZA2DR+KQfT+b3JEB0r9YRg==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/4.1.0/spin.min.js" integrity="sha512-CbohqWjAgarTqRHcX1MbwkF2pujwbsCee1PABpnBWC+VqSldvlNEEI5+4OSsR/HbFQOFFpwY2YvZZNjBMxNnXg==" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+        <script type="text/javascript" src="https://www.ddbj.nig.ac.jp/assets/js/jquery.trace.js"></script>
+        <script type="text/javascript" src="https://www.ddbj.nig.ac.jp/assets/js/jquery.json_search.js"></script>
+        <link rel="stylesheet" href="https://www.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+        <link rel="stylesheet" href="https://www.ddbj.nig.ac.jp/assets/css/main.css" />
+        <link rel="alternate" type="application/rss+xml" title="My Site RSS" href="/feed.xml" />
 
-  Name       : Instant 
-  Description: A three-column, fixed-width blog design.
-  Version    : 1.0
-  Released   : 20080905
+        <script src="https://www.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    </head>
 
--->
-<html dir="ltr" lang="ja">
-<head>
-<meta charset="UTF-8" />
-<title><tiles:insertAttribute name="title" ignore="true" /></title>
+    <body data-category="services">
+        <script
+          src="https://www.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js"
+          id="DDBJ_common_framework"
+          style="display: block; height: 40px;"
+          data-bottom-menu="true"
+          data-ddbj-home-page="true"
+          data-search="true"
+        ></script>
 
-<link rel="stylesheet" href="resources/css/style.css" type="text/css" />
+        <div id="primary">
+            <header id="PageHeader">
+                <tiles:insertAttribute name="header" />
+            </header>
+            <div id="NavigationAndMainView">
+                <div class="inner">
+                    <div class="subview">
+                        <nav class="internal-link">
+                            <tiles:insertAttribute name="side-menu" />
+                        </nav>
+                    </div>
+                    <section id="MainContentView" class="mainview">
+                        <main class="md-content">
+                            <form method="post" action="result" >
 
-<script type="text/javascript" src="resources/js/jquery-1.7.2.min.js"></script>
-<tiles:insertAttribute name="jquery-functions" />
+                                <tiles:insertAttribute name="viewer-form" />
 
-</head>
-
-<body>
-	<div id="container">
-		<div id="header">
-			<tiles:insertAttribute name="header" />
-		</div>
-
-		<div id="subContent">
-			<tiles:insertAttribute name="breadcrumb" />
-
-			<br class="boxclear">
-			<h1>${program_title}</h1>
-
-
-
-				<div id="container">
-					<div id="content" role="main">
-
-				  		<form method="post" action="result" >
-
-							<tiles:insertAttribute name="viewer-form" />
-
-				  		</form>
-					</div>
-					<div id="sub">
-						<tiles:insertAttribute name="side-menu" />
-					</div>
-				</div>
-
-
-		</div>
-		<div id="footer">
-			<tiles:insertAttribute name="footer" />
-		</div>
-
-	</div>
-</body>
+                            </form>
+                        </main>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
+

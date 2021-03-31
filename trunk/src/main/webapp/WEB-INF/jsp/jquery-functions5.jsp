@@ -145,9 +145,9 @@ function createStartDate(requestId){
   return dateStr;
 }
 
-function del_header_jp() {
-	document.getElementById("header_jp").style.display = "none";
-}
+//function del_header_jp() {
+//	document.getElementById("header_jp").style.display = "none";
+//}
 
 function removeSearchInfo(){
 	  if($('#searchInfo2').length){
@@ -158,7 +158,7 @@ function removeSearchInfo(){
 }
 
 $(document).ready(function(){
-  del_header_jp();
+//  del_header_jp();
   language_code2 = "${language_code2}";
   //$("table").remove("#searchInfo");
   tblparent = $("table#searchInfo").detach();
