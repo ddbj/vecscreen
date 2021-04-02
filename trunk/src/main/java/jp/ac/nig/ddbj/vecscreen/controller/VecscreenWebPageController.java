@@ -72,6 +72,7 @@ public class VecscreenWebPageController {
 			model.addAttribute("language_chooser_url", "vecscreen?lang=en");
 			
 			// http://www.ddbj.nig.ac.jp/index-j.html などの"j"の部分。
+                        // 2021新HPの仕様に合わせて日本語のlanguage_codeは""、英語のlanguage_codeは"-e"に変更
 			model.addAttribute("language_code", "");
 			model.addAttribute("language_code2", "ja");
 		}
@@ -96,6 +97,7 @@ public class VecscreenWebPageController {
 			model.addAttribute("language_chooser_url", "viewer?lang=en");
 
 			// http://www.ddbj.nig.ac.jp/index-j.html などの"j"の部分。
+                        // 2021新HPの仕様に合わせて日本語のlanguage_codeは""、英語のlanguage_codeは"-e"に変更
 			model.addAttribute("language_code", "");
 			model.addAttribute("language_code2", "ja");
 
@@ -133,7 +135,8 @@ public class VecscreenWebPageController {
 		//set language_code
 		if (!("j".equals(language_code) ||
 			  "e".equals(language_code))) {
-			language_code = "e";
+			//language_code = "e";
+			language_code = "-e";
 		}
 		model.addAttribute("language_code", language_code);
 
