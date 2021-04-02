@@ -3,7 +3,19 @@
             <div class="inner">
                 <div class="page-title">
                     <h1 class="title">VecScreen</h1>
-                    <tiles:insertAttribute name="breadcrumb" />
+                    <nav class="breadcrumb-view">
+                        <ul>
+                            <li>
+                                <a href="https://www.ddbj.nig.ac.jp/index.html"><spring:message code="label.breadcrumb.home" /></a>
+                            </li>
+                            <li>
+                                <a href="https://www.ddbj.nig.ac.jp/services/index.html"><spring:message code="label.breadcrumb.services" /></a>
+                            </li>
+                            <li>
+                                <a>VecScreen</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
 

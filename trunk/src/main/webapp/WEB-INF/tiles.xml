@@ -8,7 +8,6 @@
 		<put-attribute name="jquery-functions" value="/WEB-INF/jsp/jquery-functions.jsp" />
 		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
 		<put-attribute name="side-menu" value="/WEB-INF/jsp/side-menu.jsp" />
-		<put-attribute name="breadcrumb" value="/WEB-INF/jsp/breadcrumb.jsp" />
 		<put-attribute name="query-form" value="/WEB-INF/jsp/query-form.jsp" />
 		<put-attribute name="dataset" value="" />
 		<put-attribute name="parameter" value="" />
@@ -32,7 +31,6 @@
 		<put-attribute name="jquery-functions" value="/WEB-INF/jsp/jquery-functions2.jsp" />
 		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
 		<put-attribute name="side-menu" value="/WEB-INF/jsp/side-menu.jsp" />
-		<put-attribute name="breadcrumb" value="/WEB-INF/jsp/breadcrumb.jsp" />
 		<put-attribute name="report-body" value="/WEB-INF/jsp/body/report-body.jsp" />
 		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
 	</definition>
@@ -56,7 +54,6 @@
 		<put-attribute name="jquery-functions" value="/WEB-INF/jsp/jquery-functions3.jsp" />
 		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
 		<put-attribute name="side-menu" value="/WEB-INF/jsp/side-menu.jsp" />
-		<put-attribute name="breadcrumb" value="/WEB-INF/jsp/breadcrumb.jsp" />
 		<put-attribute name="mail-body" value="/WEB-INF/jsp/body/mail-body.jsp" />
 		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
 	</definition>
@@ -73,7 +70,6 @@
 		<put-attribute name="jquery-functions" value="/WEB-INF/jsp/jquery-functions4.jsp" />
 		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
 		<put-attribute name="side-menu" value="/WEB-INF/jsp/side-menu.jsp" />
-		<put-attribute name="breadcrumb" value="/WEB-INF/jsp/breadcrumb.jsp" />
 		<put-attribute name="viewer-form" value="/WEB-INF/jsp/viewer-form.jsp" />
 		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
 	</definition>
@@ -96,7 +92,6 @@
 		<put-attribute name="jquery-functions" value="/WEB-INF/jsp/jquery-functions.jsp" />
 		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
 		<put-attribute name="side-menu" value="/WEB-INF/jsp/side-menu.jsp" />
-		<put-attribute name="breadcrumb" value="/WEB-INF/jsp/breadcrumb.jsp" />
 		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
     </definition>
     
