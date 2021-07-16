@@ -2,16 +2,31 @@
 <%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-            <div id="footer_original" class="clearfix">
-                <ul class="menu">
-                    <li><a href="https://www.ddbj.nig.ac.jp/policies-${language_code}.html" title="Policies and Disclaimers">Policies and Disclaimers</a></li>
-                    <li><a href="https://www.ddbj.nig.ac.jp/news/en/index-${language_code}.html" title="News archives">News</a></li>
-                    <li><a href="https://www.ddbj.nig.ac.jp/faq/en/index-${language_code}.html" title="Frequently asked questions">FAQs</a></li>
-                    <li><a href="https://www.ddbj.nig.ac.jp/sitemap-${language_code}.html" title="Sitemap">Sitemap</a></li>
-                    <li class="calendar"><a href="https://www.ddbj.nig.ac.jp/calendar-${language_code}.html" title="DDBJ Center Calendar">Calendar</a></li>
-                    <li class="address"><address><a href="https://www.ddbj.nig.ac.jp/access-${language_code}.html" title="DDBJ Center address">Address</a></address></li>
-                    <li class="footer_contact"><a href="https://www.ddbj.nig.ac.jp/contact-${language_code}.html" title="Contact to DDBJ Center">Contact</a></li>
-                    <li class="last_modified">Last modified: <time>2019-05-17</time></li>
-                </ul>
-            </div>
-
+<div id="footer_nav" class="menu-footer-menu-ja-container">
+	<ul id="menu-footer-menu-ja" class="menu">
+		<li id="menu-item-29100" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29100">
+			<a href="http://www.ddbj.nig.ac.jp/DDBJ_site-${language_code}.html"><spring:message code="label.footer.site-map" /></a>
+		</li>
+		<li id="menu-item-29101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29101">
+			<a href="http://www.ddbj.nig.ac.jp/sitepolicy-${language_code}.html"><spring:message code="label.footer.site-policy" /></a>
+		</li>
+		<li id="menu-item-29102" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29102">
+			<a href="http://www.ddbj.nig.ac.jp/calendar-e.html"><spring:message code="label.footer.calendar" /></a>
+		</li>
+		<li id="menu-item-29103" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29103">
+			<a href="http://www.ddbj.nig.ac.jp/faq/41382-${language_code}.html"><spring:message code="label.footer.browser" /></a>
+		</li>
+	</ul>
+</div>
+<div class="lastmod"> Last modified : 2015.7.28. </div>
+<div class="licence">
+	<a href="http://creativecommons.org/licenses/by/2.1/jp/" rel="license">
+		<img src="http://i.creativecommons.org/l/by/2.1/jp/88x31.png" style="border-width:0" alt="クリエイティブ・コモンズ・ライセンス">
+	</a>
+	<span property="dct:title" xmlns:dct="http://purl.org/dc/terms/">DDBJ Home Page</span>
+	by
+	<a rel="cc:attributionURL" property="cc:attributionName" href="." xmlns:cc="http://creativecommons.org/ns#">DDBJ</a>
+	is licensed under a
+	<a href="http://creativecommons.org/licenses/by/2.1/jp/" rel="license">Creative Commons 表示 2.1 日本 License</a>
+</div>
+<address>Copyright © DNA Data Bank of Japan. </address>

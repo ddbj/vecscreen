@@ -178,21 +178,23 @@ $(document).ready(function(){
   language_code2 = "${language_code2}";
   if("${querySequence}" == ""){
     setErrorMsg(errorMsg1);
-  } else {
-    // 言語切り替えのリンクを消す。
-    //del_header_jp();
+  }
+  else{
+	del_header_jp();
     setProgram();
     setDatabase();
 //    setReportStr(database);
 
-    if (sessionStorage.getItem("requestId") == null) {
+    if(sessionStorage.getItem("requestId") == null){
       post();
-    } else {
+    }
+    else{
       requestId = sessionStorage.getItem("requestId");
-      if (sessionStorage.getItem("startDate") == null) {
+      if(sessionStorage.getItem("startDate") == null){
         removeSearchInfoTbl();
         getStatus();
-      } else {
+      }
+      else{
         startGetStatus();
       }
     }

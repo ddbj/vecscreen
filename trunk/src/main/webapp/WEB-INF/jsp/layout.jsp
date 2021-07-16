@@ -14,44 +14,51 @@
 -->
 <html dir="ltr" lang="ja">
 <head>
-    <meta charset="UTF-8" />
-    <title><tiles:insertAttribute name="title" ignore="true" /></title>
+<meta charset="UTF-8" />
+<title><tiles:insertAttribute name="title" ignore="true" /></title>
 
-    <link rel="stylesheet" href="resources/css/style-new.css" type="text/css" />
+<link rel="stylesheet" href="resources/css/style.css" type="text/css" />
 
-    <script type='text/javascript' src='https://use.fontawesome.com/da0fe5cd36.js'></script>
-    <script type="text/javascript" src="resources/js/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script type="text/javascript">
-        var $220 = $.noConflict(true);
-    </script>
-    <tiles:insertAttribute name="jquery-functions" />
-    <script type="text/javascript" src="resources/js/jquery.menu.js"></script>
+<script type="text/javascript" src="resources/js/jquery-1.7.2.min.js"></script>
+<tiles:insertAttribute name="jquery-functions" />
 
 </head>
 
 <body>
-    <div id="vecscreen-page" class="top">
-        <header id="branding">
-            <tiles:insertAttribute name="header" />
-        </header>
-        <div id="main" class="clearfix">
-            <div id="page_main">
-                <form method="post" action="report" enctype="multipart/form-data">
-                    <tiles:insertAttribute name="query-form" />
-                    <tiles:insertAttribute name="dataset" />
-                    <tiles:insertAttribute name="parameter" />
-                </form>
-            </div>
-<!--
-            <div id="sub">
-                <tiles:insertAttribute name="side-menu" />
-            </div>
--->
-        </div>
-        <footer>
-            <tiles:insertAttribute name="footer" />
-        </footer>
-    </div>
+	<div id="container">
+		<div id="header">
+			<tiles:insertAttribute name="header" />
+		</div>
+
+		<div id="subContent">
+			<tiles:insertAttribute name="breadcrumb" />
+
+			<br class="boxclear">
+			<h1>${program_title}</h1>
+
+
+
+				<div id="container">
+					<div id="content" role="main">
+
+				 		 <form method="post" action="report" enctype="multipart/form-data">
+
+							<tiles:insertAttribute name="query-form" />
+							<tiles:insertAttribute name="dataset" />
+							<tiles:insertAttribute name="parameter" />
+
+						  </form>
+					</div>
+					<div id="sub">
+						<tiles:insertAttribute name="side-menu" />
+					</div>
+				</div>
+
+
+		</div>
+		<div id="footer">
+			<tiles:insertAttribute name="footer" />
+		</div>
+	</div>
 </body>
 </html>
